@@ -29,7 +29,10 @@
 ```bash
 git clone https://github.com/GoodnightXu2002/account-niche-finder.git
 cp -r account-niche-finder ~/.agents/skills/   # 按上表替换目标目录
+rm -rf account-niche-finder                    # 清理临时 clone
 ```
+
+或者更简单：把上面的安装命令和安装表一起发给任意 coding agent（Codex / Claude Code / ZCode），说"把这个 skill 装到你能识别的 skills 目录"，它会自己完成。
 
 **没有 skills 机制的 agent 也能用**：SKILL.md 本身就是完整的执行指令——把 SKILL.md 连同 `references/` 下的三个知识库文件发给任何 LLM 对话助手，让它按流程执行即可，只是没有自动触发与跨会话复用。
 
