@@ -1,0 +1,7 @@
+{
+  "name": "account-niche-finder",
+  "version": "0.1.0",
+  "description": "对话式账号定位分析：5-6 轮结构化对话盘点素材，分析适合用 AI 做什么类型的内容账号，输出定位报告与验证方案（小红书图文 + 公众号）",
+  "author": { "name": "GoodnightXu2002" },
+  "skills": "./skills"
+}

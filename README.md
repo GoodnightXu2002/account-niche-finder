@@ -62,6 +62,8 @@ account-niche-finder/
     └── 示例报告-运营人林晓.md      # 模拟示例输出报告（人设虚构）
 ```
 
+> `zcode-plugin/` 是 ZCode 插件市场打包格式（内含同步的 SKILL.md 副本）；根目录的 `marketplace.json` 让整个仓库本身就是一个可添加的插件市场。更新 skill 时记得三处同步（本目录、仓库根、zcode-plugin）。
+
 ## 免责声明
 
 - 示例对话与示例报告中的人设为虚构，数据为演示用途。

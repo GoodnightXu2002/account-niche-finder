@@ -1,0 +1,15 @@
+{
+  "name": "goodnightxu2002-skills",
+  "plugins": [
+    {
+      "name": "account-niche-finder",
+      "source": "./zcode-plugin",
+      "version": "0.1.0",
+      "description": "对话式账号定位分析：分析适合用 AI 做什么内容账号，输出定位报告与验证方案",
+      "displayName": "Account Niche Finder",
+      "displayName_i18n": { "zh-CN": "账号定位分析" },
+      "description_i18n": { "zh-CN": "通过 5-6 轮结构化对话盘点你的素材，分析适合用 AI 做什么类型的内容账号，输出定位报告与验证方案（小红书图文 + 公众号）" },
+      "category": "productivity"
+    }
+  ]
+}
