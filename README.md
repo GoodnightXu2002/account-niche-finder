@@ -17,15 +17,23 @@
 
 ## 安装
 
-把整个目录复制到你的 agent skills 目录即可：
+本 skill 遵循开放的 Agent Skills 格式（SKILL.md + references），主流 coding agent 均可安装：
+
+| Agent | 安装位置 | 触发方式 |
+|---|---|---|
+| ZCode | `~/.agents/skills/` | 自动触发 |
+| Claude Code | `~/.claude/skills/` 或 `.agents/skills/` | 自动触发 |
+| Codex CLI | `~/.codex/skills/` | 自动触发 |
+| 其他 agent / 网页对话助手 | 任意位置 | 手动：把 SKILL.md 作为指令发给模型 |
 
 ```bash
-# ZCode / Claude Code 等 Agent Skills 格式的工具
-git clone <repo-url>
-cp -r account-niche-finder ~/.agents/skills/
+git clone https://github.com/GoodnightXu2002/account-niche-finder.git
+cp -r account-niche-finder ~/.agents/skills/   # 按上表替换目标目录
 ```
 
-依赖：宿主 agent 具备 WebSearch 能力（用于对标博主分析与时效字段核实）和 docx 生成能力（可选，用于 Word 定稿导出；不具备时 md 工作稿即为交付物）。
+**没有 skills 机制的 agent 也能用**：SKILL.md 本身就是完整的执行指令——把 SKILL.md 连同 `references/` 下的三个知识库文件发给任何 LLM 对话助手，让它按流程执行即可，只是没有自动触发与跨会话复用。
+
+**依赖与降级**：宿主 agent 具备 WebSearch 能力最佳（用于对标博主分析与时效字段核实；没有时 skill 自动降级为截图/口述路径）；docx 生成能力可选（用于 Word 定稿导出，没有时 md 工作稿即为交付物）。
 
 ## 使用
 
